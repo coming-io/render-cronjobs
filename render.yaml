@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: minimal-cron
+    env: ruby
+    schedule: "*/5 * * * *"
+    buildCommand: "true"
+    startCommand: echo "hello"
