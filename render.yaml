@@ -1,7 +1,7 @@
 services:
   - type: cron
-    name: minimal-cron
-    env: ruby
-    schedule: "*/5 * * * *"
+    name: rb-parseserver-cron
+    env: node
+    schedule: "0 */3 * * *"
     buildCommand: "true"
     startCommand: echo "hello"
